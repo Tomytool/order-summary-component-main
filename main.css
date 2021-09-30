@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e0e8ff;
+  position: relative;
+}
+body .imagen__svg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+body .contenedor {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contenedor .card {
+  width: 450px;
+  min-width: 327px;
+  margin: 0 24px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .contenedor .card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+body .contenedor .card .card__texto {
+  width: 354px;
+  text-align: center;
+  margin: 45px 0 20px 0;
+}
+body .contenedor .card .card__texto h2 {
+  margin-bottom: 17px;
+}
+body .contenedor .card .card__texto p {
+  color: #717fa6;
+  font-style: italic;
+}
+body .contenedor .card .card__opcion {
+  width: 354px;
+  height: 98px;
+  background-color: #f7f9ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+  border-radius: 11px;
+}
+body .contenedor .card .card__opcion img {
+  width: 48px;
+  height: 48px;
+}
+body .contenedor .card .card__opcion .costo {
+  margin-right: 94px;
+}
+body .contenedor .card .card__opcion .costo .texto1 {
+  margin-bottom: 6px;
+}
+body .contenedor .card .card__opcion .costo .texto2 {
+  font-size: 16px;
+  font-weight: 200;
+  color: #717fa6;
+}
+body .contenedor .card .card__opcion a {
+  margin-top: 40px;
+}
+body .contenedor .card button {
+  width: 354px;
+  height: 50px;
+  background-color: #382ae1;
+  border-radius: 11px;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+body .contenedor .card button:hover {
+  background-color: #766cf1;
+}
+body .contenedor .card a {
+  color: #717fa6;
+  text-decoration: none;
+  margin-bottom: 48px;
+}
+body .contenedor .card a:hover {
+  color: #1f2e55;
+}
+@media (max-width: 375px) {
+  body .contenedor .card .card__opcion,
+body .contenedor .card button,
+body .contenedor .card .card__texto {
+    margin: 0 auto;
+    width: 279px;
+  }
+  body .contenedor .card .card__opcion .costo {
+    margin-right: 50px;
+  }
+  body .contenedor .card a {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */

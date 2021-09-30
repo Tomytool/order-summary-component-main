@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display';
+}
+$color_fondo: #e0e8ff;
+$color_vector: #d6e1ff;
+$color_cuadroCard: #f7f9ff;
+$color_boton: #382ae1;
+$color_botonHover: #766cf1;
+$color_linkHover: #1f2e55;
+
+$texto1: 28px;
+$texto2: 16px;
+$texto_link: 14px;
+$texto_boton: 15px;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color_fondo;
+  position: relative;
+  .imagen__svg {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+  .contenedor {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      width: 450px;
+      min-width: 327px;
+      margin: 0 24px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+      .card__texto {
+        width: 354px;
+
+        text-align: center;
+        margin: 45px 0 20px 0;
+        h2 {
+          margin-bottom: 17px;
+        }
+        p {
+          color: #717fa6;
+          font-style: italic;
+        }
+      }
+      .card__opcion {
+        width: 354px;
+
+        height: 98px;
+        background-color: $color_cuadroCard;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 32px;
+        border-radius: 11px;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+        .costo {
+          margin-right: 94px;
+          .texto1 {
+            margin-bottom: 6px;
+          }
+          .texto2 {
+            font-size: 16px;
+            font-weight: 200;
+            color: #717fa6;
+          }
+        }
+        a {
+          margin-top: 40px;
+        }
+      }
+      button {
+        width: 354px;
+        height: 50px;
+
+        background-color: $color_boton;
+        border-radius: 11px;
+        font-size: $texto_boton;
+        color: #ffffff;
+        margin-bottom: 32px;
+      }
+      button:hover {
+        background-color: $color_botonHover;
+      }
+      a {
+        color: #717fa6;
+        text-decoration: none;
+        margin-bottom: 48px;
+      }
+      a:hover {
+        color: $color_linkHover;
+      }
+    }
+    @media (max-width: 375px) {
+      .card {
+        .card__opcion,
+        button,
+        .card__texto {
+          margin: 0 auto;
+          width: 279px;
+        }
+        .card__opcion {
+          .costo {
+            margin-right: 50px;
+          }
+        }
+
+        a {
+          margin-top: 24px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
